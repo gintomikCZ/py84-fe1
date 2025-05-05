@@ -1,5 +1,42 @@
-HTML - zobrazovani obsahu
-CSS - stylování
-JS - interakce s uživatelem (prog. language)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+    form controls ... kontrolky
+    booleanovske atributy - disabled, readonly, autofocus
+    focus - element získává focus
+    blur - element focus ztrácí
+    atribut tabindex -1 element není focusovatelný tabelátorem
+            tabindex 0 - je
+  -->
+  <form autocomplete="off">
+    <div>
+      <label for="firstname">first name</label>
+      <input id="firstname" placeholder="Jan" readonly tabindex="-1">
+    </div>
+    <div>
+      <label for="lastname">last name</label>
+      <input id="lastname" placeholder="Novák" autofocus>
+    </div>
+    <div>
+      <label for="dateofbirth">date of birth</label>
+      <input id="dateofbirth" type="date">
+    </div>
+    <div>
+      <label for="number">favourite number</label>
+      <input id="number" type="time" min="1" max="10" step="2">
+    </div>
 
-webový prohlížeč
+    <!-- tohle chci komentnout -->
+    <!-- <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore omnis iure, consequatur libero at mollitia magni incidunt voluptate consectetur quis assumenda nostrum ipsum ex culpa facere quas doloremque sit animi.
+      <div>další text</div>
+    </p> -->
+  </form>
+</body>
+</html>
